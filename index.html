@@ -20,7 +20,7 @@
     </header>
     <main>
 
-      <h1>Город Седона</h1>
+      <h1 class="visually-hidden">Город Седона</h1>
 
       <section class="background">
         <img src="img/intro-welcome.svg" width="458px" height="353px" alt="Добро пожаловать в Седону"
@@ -63,7 +63,7 @@
         </ul>
       </section>
       <section>
-        <h3>Рекомендации</h3>
+        <h3 class="visually-hidden">Рекомендации</h3>
         <ul>
           <li>
             <h4>Жильё</h4>
@@ -84,7 +84,30 @@
       <section>
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <!-- Здесь будет форма -->
+        
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <h3>Поиск гостиницы в Седоне</h3>
+          <p>
+            <label for="check-in">Дата заезда</label>
+            <input id="check-in" type="date" name="in" value="04/24/2017" required>
+            
+          </p>
+          <p>
+            <label for="check-out">Дата выезда</label>
+            <input id="check-out" type="date" name="out" value="07/04/2017" required>
+             
+          </p>
+          <p>
+            <label for="grown-ups">Взрослые</label>
+            <input id="grown-ups" type="number" name="grown-ups" value="2" required>
+          </p>
+          <p>
+            <label for="children">Дети</label>
+            <input id="children" type="number" name="children" value="0" required>
+          </p>
+        </form>
+        <button type="submit">Найти</button>
+
         <div>
           <img src="img/map.jpg" width="1200px" height="474" alt="карта">
         </div>
